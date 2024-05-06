@@ -1,0 +1,146 @@
+body {
+  /* CSS Reset */
+  *,
+  html,
+  body,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  background: #2b2a33;
+  max-width: 21cm;
+  color: #36395a;
+  margin: auto;
+  cursor: default;
+}
+
+header {
+  position: relative;
+  border-radius: 12px 12px 0 0;
+  background: #ebe1d8;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow:
+    rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  height: 10dvh;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h2:after {
+  content: "";
+  height: 2px;
+  width: 10%;
+  background: #36395a;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+main {
+  background: #ebe1d8;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  /*height: 80dvh;*/
+}
+
+section {
+  padding: 1em;
+}
+
+ul {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+ul li:first-child {
+  margin-top: 1em;
+}
+
+li {
+  list-style: none;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  margin-top: -1em;
+}
+
+a {
+  color: #2b2a33;
+}
+
+footer {
+  position: relative;
+  border-radius: 0 0 12px 12px;
+  background: #ebe1d8;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  /*height: 10dvh;*/
+}
+
+.bottomLeft__img,
+.bottomRight__img,
+.topLeft__img,
+.topRight__img {
+  width: 75px;
+  position: absolute;
+}
+
+.topLeft__img {
+  top: 5px;
+  left: 5px;
+  transform: rotate(90deg);
+}
+
+.topRight__img {
+  top: 5px;
+  right: 5px;
+  transform: rotate(180deg);
+}
+
+.bottomLeft__img {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+}
+
+.bottomRight__img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: scaleX(-1);
+  width: 150px;
+}
+
+@media screen and (min-device-width: 320px) {
+  h1 {
+    font-size: 1.3em;
+  }
+
+
+  .bottomLeft__img,
+  .bottomRight__img,
+  .topLeft__img,
+  .topRight__img {
+    width: 40px;
+  }
+}
