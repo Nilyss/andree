@@ -152,7 +152,7 @@ footer {
 
 @media screen and (min-width: 1024px) {
   main {
-    height: 80dvh;
+    min-height: 80dvh;
   }
 
   footer {
@@ -168,4 +168,21 @@ footer {
   .topRight__img {
     width: 75px;
   }
+}
+
+/* PAINTS SECTIONS & PICTURES SECTIONS */
+
+.paints figure,
+.pictures figure {
+  width: 250px;
+}
+
+.paints figure img,
+.pictures figure img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow:
+    rgba(0, 0, 0, 0.4) 0 2px 4px,
+    rgba(0, 0, 0, 0.3) 0 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
 }
