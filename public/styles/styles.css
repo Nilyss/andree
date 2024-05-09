@@ -74,6 +74,16 @@ ul li:first-child {
 li {
   list-style: none;
   text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+li span {
+  font-style: italic;
+  font-weight: 700;
 }
 
 p {
